@@ -31,8 +31,7 @@ function Dashboard() {
         <select
           className='cursor-pointer text-2xl'
           onChange={handleUserChange}
-          value={userMusicStats.id}
-        >
+          value={userMusicStats.id}>
           {mockData.users.map((user) => (
             <option key={user.id} value={user.id}>
               {user.name}
@@ -49,7 +48,6 @@ function Dashboard() {
               {userMusicStats.name}
             </Link>
           </h1>
-          <p className='text-gray-600 text-sm'>ID: {userMusicStats.id}</p>
           <p className='text-gray-600 text-sm'>Email: {userMusicStats.email}</p>
           <p className='text-gray-600 text-sm'>
             Location: {userMusicStats.location}
