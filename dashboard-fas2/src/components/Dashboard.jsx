@@ -26,8 +26,8 @@ function Dashboard() {
 
   return (
     <main className='p-6 max-w-6xl mx-auto bg-gray-100 min-h-screen'>
-      <div className='flex justify-center pb-16'>
-        <h2>Users:</h2>
+      <div className='flex items-center gap-2 justify-center pb-16'>
+        <h2 className='text-2xl font-semibold'>Users:</h2>
         <select
           className='cursor-pointer text-2xl'
           onChange={handleUserChange}
