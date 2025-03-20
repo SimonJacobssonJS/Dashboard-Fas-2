@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 export default function NavHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,7 +15,7 @@ export default function NavHeader() {
         {/* Logo (klickbar länk till startsidan) */}
         <Link
           to='/'
-          className='text-4xl font-extrabold text-white  transition-all duration-300 transform hover:scale-110'>
+          className='text-4xl font-extrabold text-white transition-all duration-300 transform hover:scale-110'>
           BeatStats
         </Link>
 
@@ -23,22 +24,30 @@ export default function NavHeader() {
           <li>
             <Link
               to='/'
-              className='nav-link  hover:scale-110 transition-all duration-300 transform inline-block'>
+              className='nav-link hover:scale-110 transition-all duration-300 transform inline-block'>
               Home
             </Link>
           </li>
           <li>
             <Link
               to='/top-songs'
-              className='nav-link  hover:scale-110 transition-all duration-300 transform inline-block'>
+              className='nav-link hover:scale-110 transition-all duration-300 transform inline-block'>
               Top Songs
             </Link>
           </li>
           <li>
             <Link
               to='/profiles'
-              className='nav-link  hover:scale-110 transition-all duration-300 transform inline-block'>
+              className='nav-link hover:scale-110 transition-all duration-300 transform inline-block'>
               Profiles
+            </Link>
+          </li>
+          {/* Add Trending Songs link here, to the right */}
+          <li>
+            <Link
+              to='/trending-songs'
+              className='nav-link hover:scale-110 transition-all duration-300 transform inline-block'>
+              Trending Songs
             </Link>
           </li>
         </ul>
@@ -80,6 +89,13 @@ export default function NavHeader() {
               href='#profile'
               className='nav-link hover:text-tertiary hover:scale-110 transition-all duration-300 transform inline-block'>
               Profile
+            </a>
+          </li>
+          <li>
+            <a
+              href='/trending-songs'
+              className='nav-link hover:text-tertiary hover:scale-110 transition-all duration-300 transform inline-block'>
+              Trending Songs
             </a>
           </li>
         </ul>
