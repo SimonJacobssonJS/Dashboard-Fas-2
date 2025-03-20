@@ -28,7 +28,7 @@ function Dashboard() {
     <main className='p-6 max-w-6xl mx-auto bg-gray-100 min-h-screen'>
       <div className='flex items-center gap-2 justify-center pb-16'>
         <select
-          className='cursor-pointer text-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl px-4 py-2 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300'
+          className='cursor-pointer text-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl px-4 py-2 shadow-md focus:outline-none focus:ring-4 focus:ring-red-400 focus:border-red-500 focus:bg-red-600 my-2'
           onChange={handleUserChange}
           value={userMusicStats.id}>
           {mockData.users.map((user) => (
