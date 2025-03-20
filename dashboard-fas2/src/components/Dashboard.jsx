@@ -26,15 +26,13 @@ function Dashboard() {
 
   return (
     <main className='p-6 max-w-6xl mx-auto bg-gray-100 min-h-screen'>
-      <div className='flex justify-center pb-16'>
-        <h2>Users:</h2>
+      <div className='flex items-center gap-2 justify-center pb-16'>
         <select
-          className='cursor-pointer text-2xl'
+          className='cursor-pointer text-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-2xl px-4 py-2 shadow-md focus:outline-none focus:ring-4 focus:ring-red-400 focus:border-red-500 focus:bg-red-600 my-2'
           onChange={handleUserChange}
-          value={userMusicStats.id}
-        >
+          value={userMusicStats.id}>
           {mockData.users.map((user) => (
-            <option key={user.id} value={user.id}>
+            <option key={user.id} value={user.id} className='text-black'>
               {user.name}
             </option>
           ))}
@@ -49,7 +47,6 @@ function Dashboard() {
               {userMusicStats.name}
             </Link>
           </h1>
-          <p className='text-gray-600 text-sm'>ID: {userMusicStats.id}</p>
           <p className='text-gray-600 text-sm'>Email: {userMusicStats.email}</p>
           <p className='text-gray-600 text-sm'>
             Location: {userMusicStats.location}

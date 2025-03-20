@@ -10,6 +10,7 @@ import ErrorPage from './pages/ErrorPage';
 import Profiles from './pages/Profiles';
 import AllProfiles from './pages/AllProfiles';
 import TopSongs from './pages/TopSongs';
+import TrendingSongs from './components/TrendingSongs';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/top-songs',
     element: <TopSongs />,
+  },
+  {
+    path: '/trending-songs',
+    element: <TrendingSongs />,
   },
 ]);
 

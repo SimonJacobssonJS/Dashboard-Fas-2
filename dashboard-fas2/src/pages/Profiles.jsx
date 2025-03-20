@@ -33,7 +33,7 @@ function Profiles() {
         <div className='max-w-4xl mx-auto'>
           <div className='flex gap-4 items-center justify-center'>
             <button className='text-4xl'>
-              <Link to='/'>⬅️</Link>
+              <Link to='/'>⬅</Link>
             </button>
             <h1 className='text-4xl font-bold mb-4'>{user.name}</h1>
           </div>
@@ -75,8 +75,7 @@ function Profiles() {
                 {user.topSongs.map((song) => (
                   <li
                     key={song.song}
-                    className='bg-gray-50 p-4 rounded-lg shadow-sm'
-                  >
+                    className='bg-gray-50 p-4 rounded-lg shadow-sm'>
                     <p className='text-lg font-medium'>
                       {song.song} - {song.artist}
                     </p>
