@@ -14,7 +14,7 @@ export default function NavHeader() {
         {/* Logo (klickbar länk till startsidan) */}
         <Link
           to='/'
-          className='text-4xl font-extrabold text-white hover:text-tertiary transition-all duration-300 transform hover:scale-110'>
+          className='text-4xl font-extrabold text-white  transition-all duration-300 transform hover:scale-110'>
           BeatStats
         </Link>
 
@@ -23,21 +23,21 @@ export default function NavHeader() {
           <li>
             <Link
               to='/'
-              className='nav-link hover:text-tertiary hover:scale-110 transition-all duration-300 transform inline-block'>
+              className='nav-link  hover:scale-110 transition-all duration-300 transform inline-block'>
               Home
             </Link>
           </li>
           <li>
             <Link
               to='/top-songs'
-              className='nav-link hover:text-tertiary hover:scale-110 transition-all duration-300 transform inline-block'>
+              className='nav-link  hover:scale-110 transition-all duration-300 transform inline-block'>
               Top Songs
             </Link>
           </li>
           <li>
             <Link
               to='/profiles'
-              className='nav-link hover:text-tertiary hover:scale-110 transition-all duration-300 transform inline-block'>
+              className='nav-link  hover:scale-110 transition-all duration-300 transform inline-block'>
               Profiles
             </Link>
           </li>
